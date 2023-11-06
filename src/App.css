@@ -182,7 +182,7 @@
     flex: 1 1 clamp(200px, 30vw, 220px);
   }
 
-  .folder, .folder-flap, .hero-time, .hero {
+  .folder, .folder-flap, .hero-time, .hero, .content {
     min-width: 200px;
   }
 

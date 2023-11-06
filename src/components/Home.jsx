@@ -14,12 +14,12 @@ export default function Home() {
     <div className="wrapper">
       <HeroFolder />
       <div className='wrapper2'>
-      <Folder color={"#ff8c66"} source={iconwork}/>
-      <Folder color={"#56c2e6"} source={iconplay}/>
-      <Folder color={"#ff5c7c"} source={iconstudy}/>
-      <Folder color={"#4acf81"} source={iconexercise}/>
-      <Folder color={"#7536d3"} source={iconsocial}/>
-      <Folder color={"#f1c65b"} source={iconsc}/>
+      <Folder color={"#ff8c66"} source={iconwork} hours={32} duration={36}/>
+      <Folder color={"#56c2e6"} source={iconplay} hours={10} duration={8}/>
+      <Folder color={"#ff5c7c"} source={iconstudy} hours={4} duration={7}/>
+      <Folder color={"#4acf81"} source={iconexercise} hours={4} duration={5}/>
+      <Folder color={"#7536d3"} source={iconsocial} hours={5} duration={10}/>
+      <Folder color={"#f1c65b"} source={iconsc} hours={2} duration={2}/>
       </div>
     </div>
   )

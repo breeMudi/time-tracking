@@ -3,7 +3,7 @@ import { useState } from "react";
 
 
 
-const Folder = ({ color, source }) => {
+const Folder = ({ color, source, hours, duration }) => {
   return (
     <div className="folder content" style={{backgroundColor: color}}>
       <img className="eventIcon" src={source} alt="" />
@@ -17,8 +17,8 @@ const Folder = ({ color, source }) => {
           </div>
         </div>
         <div className="event eventdesktop">
-          <span className="left event-hours">32hrs</span>
-          <span className="right event-span">Last Week - <span className="past-hours">36</span> hrs</span>
+          <span className="left event-hours">{hours}hrs</span>
+          <span className="right event-span">Last Week - <span className="past-hours">{duration}</span> hrs</span>
         </div>
       </div>
     </div>
