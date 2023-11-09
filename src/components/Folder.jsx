@@ -3,13 +3,13 @@ import { useState } from "react";
 
 
 
-const Folder = ({ color, source, hours, duration }) => {
+const Folder = ({ color, source, hours, duration, eventType }) => {
   return (
     <div className="folder content" style={{backgroundColor: color}}>
       <img className="eventIcon" src={source} alt="" />
       <div className="folder-flap">
         <div className="event">
-          <div className="left event-type">Work</div>
+          <div className="left event-type">{eventType}</div>
           <div className="right dots">
             <div></div>
             <div></div>
