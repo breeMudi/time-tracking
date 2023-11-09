@@ -1,4 +1,4 @@
-import { useEffect } from "react"
+import { useEffect, useRef, useState } from "react"
 import imagejeremy from "../assets/imagejeremy.png"
 import { createGlobalState } from "react-hooks-global-state"
 
@@ -6,9 +6,13 @@ const initialState = { duration: 'daily' }
 const { setGlobalState , useGlobalState } = createGlobalState(initialState)
 
 const HeroFolder = () => {
-    // const [values, setValue] = useGlobalState('duration')
+  // const access = useRef('null')
     const [necesary] = useGlobalState("duration")
-    useEffect(()=>{console.log('this oo',necesary)}, [necesary])
+    // const [toggle, isToggle] = useState(false)
+    // useEffect(()=>{setColor(selections[(Math.random()* 3).toFixed(0)]); console.log(colors)}, [colors, necesary])
+    useEffect(()=>{console.log(necesary)}, [necesary])
+
+
     return (
       <div className="folder hero">
           <div className="folder-flap">
@@ -20,10 +24,10 @@ const HeroFolder = () => {
                 </div>
               </div>
           </div>
-          <div className="hero-time" id={necesary}>
-            <span className="daily" onClick={()=> setGlobalState("duration",'daily')}>Daily</span>
-            <span className="weekly" onClick={()=> setGlobalState("duration",'weekly')}>Weekly</span>
-            <span className="monthly" onClick={()=> setGlobalState("duration",'monthly')}>Monthly</span>
+          <div className="hero-time" >
+            <span id="daily" onClick={()=> {setGlobalState("duration",'daily'); }} className="times">Daily</span>
+            <span id="weekly" onClick={()=> {setGlobalState("duration",'weekly');}} className="times">Weekly</span>
+            <span id="monthly" onClick={()=> {setGlobalState("duration",'monthly');}} className="times">Monthly</span>
           </div>
       </div>
     )

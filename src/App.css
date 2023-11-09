@@ -93,9 +93,14 @@
   color: #bdc1ff;
 }
 
-.hero-time>*:hover {
-  color: #fff;
+.hero-time :hover {
+  /* color: #fff; */
   cursor: pointer;
+  scale: 1.1;
+}
+
+.times:focus {
+  color: #fff ;
 }
 
 .folder, .folder-flap {
