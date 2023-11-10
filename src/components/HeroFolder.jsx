@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react"
+// import { useEffect, useRef, useState } from "react"
 import imagejeremy from "../assets/imagejeremy.png"
 import { createGlobalState } from "react-hooks-global-state"
 
@@ -7,10 +7,10 @@ const { setGlobalState , useGlobalState } = createGlobalState(initialState)
 
 const HeroFolder = () => {
   // const access = useRef('null')
-    const [necesary] = useGlobalState("duration")
+    // const [necesary] = useGlobalState("duration")
     // const [toggle, isToggle] = useState(false)
     // useEffect(()=>{setColor(selections[(Math.random()* 3).toFixed(0)]); console.log(colors)}, [colors, necesary])
-    useEffect(()=>{console.log(necesary)}, [necesary])
+    // useEffect(()=>{console.log(necesary)}, [necesary])
 
 
     return (

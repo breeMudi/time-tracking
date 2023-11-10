@@ -59,6 +59,10 @@
 .content {
   height: clamp(180px, 40vw, 200px);
 }
+.content .folder-flap:hover {
+  bottom: -7px;
+  transition: 0.8s;
+}
 
 .hero-profile{
   align-items: center;
@@ -161,6 +165,16 @@
 
 .event-span {
   color: #bdc1ff;
+}
+
+@media (min-width:500px){
+  .folder, .folder-flap {
+    max-width: 460px;
+  }
+  .hero-time {
+    margin-bottom: 20px;
+    transition: 1s;
+  }
 }
 
 @media (min-width:880px){
