@@ -14,7 +14,6 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 
 - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -60,7 +59,7 @@ Due to this: One will wonder, is it not possible to pass the changed variable as
 
 Turns out that this is indeed possible. thanx to _Arthur Schmaro_ On Youtube [HisVideo] (https://www.youtube.com/watch?v=3YKlDXqX9r8)
 
-> With his method i was able to set global state variables that can be updated and used from any component in the react app.
+> With his method, I was able to set global state variables that can be updated and used from any component in the react app.
 
 To see how this was implemented: Go to the [HeroComponent](https://github.com/breeMudi/time-tracking/blob/main/src/components/HeroFolder.jsx)
 
